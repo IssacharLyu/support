@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="SwipeToLoadLayout">
+        <attr name="refresh_enabled" format="boolean" />
+        <attr name="load_more_enabled" format="boolean" />
+
+        <attr name="swipe_style" format="enum">
+            <enum name="classic" value="0" />
+            <enum name="above" value="1" />
+            <enum name="blew" value="2" />
+            <enum name="scale" value="3" />
+        </attr>
+        <attr name="refresh_trigger_offset" format="dimension" />
+        <attr name="load_more_trigger_offset" format="dimension" />
+        <attr name="refresh_final_drag_offset" format="dimension" />
+        <attr name="load_more_final_drag_offset" format="dimension" />
+        <attr name="release_to_refreshing_scrolling_duration" format="integer" />
+        <attr name="refresh_complete_delay_duration" format="integer" />
+        <attr name="refresh_complete_to_default_scrolling_duration" format="integer" />
+        <attr name="default_to_refreshing_scrolling_duration" format="integer" />
+        <attr name="release_to_loading_more_scrolling_duration" format="integer" />
+        <attr name="load_more_complete_delay_duration" format="integer" />
+        <attr name="load_more_complete_to_default_scrolling_duration" format="integer" />
+        <attr name="default_to_loading_more_scrolling_duration" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="ImageViewPagerAttrs">
+        <attr name="dotsViewHeight" format="dimension" />
+        <attr name="dotsSpacing" format="dimension" />
+        <attr name="dotsMargin" format="dimension" />
+        <attr name="dotsFocusImage" format="reference" />
+        <attr name="dotsBlurImage" format="reference" />
+        <attr name="dotsBackground" format="reference|color" />
+        <attr name="dotsBgAlpha" format="float" />
+        <attr name="dotsGravity">
+            <enum name="RIGHT" value="5" />
+            <enum name="LEFT" value="3" />
+            <enum name="CENTER_HORIZONTAL" value="17" />
+        </attr>
+        <attr name="changeInterval" format="integer" />
+        <attr name="autoChange" format="boolean" />
+        <attr name="recycleble" format="boolean" />
+        <attr name="dotsIsAdd" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="Border">
+        <attr name="border_b_color" format="color" />
+        <attr name="border_left_size" format="dimension" />
+        <attr name="border_top_size" format="dimension" />
+        <attr name="border_right_size" format="dimension" />
+        <attr name="border_bottom_size" format="dimension" />
+        <attr name="border_bottom_leftpadding" format="dimension" />
+        <attr name="border_enable" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="CircleImageView">
+        <attr name="border_width" format="dimension" />
+        <attr name="border_color" format="color" />
+        <attr name="border_overlay" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="NumberProgressBar">
+        <attr name="progress_current" format="integer"/>
+        <attr name="progress_max" format="integer"/>
+        <attr name="progress_unreached_color" format="color"/>
+        <attr name="progress_reached_color" format="color"/>
+        <attr name="progress_reached_bar_height" format="dimension"/>
+        <attr name="progress_unreached_bar_height" format="dimension"/>
+        <attr name="progress_text_size" format="dimension"/>
+        <attr name="progress_text_color" format="color"/>
+        <attr name="progress_text_offset" format="dimension"/>
+        <attr name="progress_text_visibility" format="enum">
+            <enum name="visible" value="0"/>
+            <enum name="invisible" value="1"/>
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="Themes">
+        <attr name="numberProgressBarStyle" format="reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="TextOne">
+        <attr name="text_color" format="color" />
+        <attr name="text_size" format="dimension" />
+        <attr name="text" format="string" />
+        <attr name="one_color" format="color" />
+        <attr name="one_size" format="dimension" />
+        <attr name="one" format="string" />
+    </declare-styleable>
+    <declare-styleable name="ThemesUnit">
+        <attr name="textOneStyle" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="StickyScrollView">
+        <attr name="stuckShadowHeight" format="dimension" />
+        <attr name="stuckShadowDrawable" format="reference" />
+    </declare-styleable>
+</resources>
