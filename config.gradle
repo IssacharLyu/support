@@ -1,11 +1,14 @@
 ext {
-    minSdkVersion = 14
+    applicationId     = "mobi.app.anjd"
+    minSdkVersion     = 14
     compileSdkVersion = 23
-    targetSdkVersion = 23
+    targetSdkVersion  = 23
     buildToolsVersion = '23.0.2'
+    versionCode       = 1
+    versionName       = "1.0.1"
 
     ci = 'true'.equals(System.getenv('CI'))
 
-    supportRecyclerView = 'com.android.support:recyclerview-v7:23.1.1'
-    supportAppCompat = 'com.android.support:appcompat-v7:23.1.1'
+    supportRecyclerView = 'com.android.support:recyclerview-v7:23.2.1'
+    supportAppCompat = 'com.android.support:appcompat-v7:23.2.1'
 }
