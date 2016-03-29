@@ -1,4 +1,4 @@
-package com.broil.support.widget;
+package com.broil.support.utils;
 
 import android.annotation.TargetApi;
 import android.app.Activity;
