@@ -10,8 +10,6 @@ import android.graphics.Rect;
 import android.util.AttributeSet;
 import android.widget.LinearLayout;
 
-import mobi.app.anjd.R;
-
 
 /**
  * 可以想Html中的div一样设置border的属性

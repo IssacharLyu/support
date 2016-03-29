@@ -14,8 +14,6 @@ import android.widget.ScrollView;
 
 import java.util.ArrayList;
 
-import mobi.app.anjd.R;
-
 /**
  * 
  * @author Emil Sj�lander - sjolander.emil@gmail.com

@@ -17,15 +17,17 @@ import android.view.animation.CycleInterpolator;
 import android.view.animation.TranslateAnimation;
 import android.widget.EditText;
 
-import mobi.app.anjd.R;
-
+/**
+ *
+ */
 public class ClearEditText extends EditText implements
         OnFocusChangeListener, TextWatcher {
     /**
      * 删除按钮的引用
      */
     private Drawable mClearDrawable;
-//    private Drawable mTransDrawable;
+//    private Context mContext;
+
 
     /**
      * 控件是否有焦点
@@ -45,6 +47,8 @@ public class ClearEditText extends EditText implements
 
     public ClearEditText(Context context, AttributeSet attrs, int defStyle) {
         super(context, attrs, defStyle);
+//        this.mContext = context;
+
         init();
     }
 

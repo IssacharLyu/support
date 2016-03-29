@@ -1,6 +1,8 @@
 
 package com.broil.support.widget.imageviewpager;
 
+import java.util.List;
+
 import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -17,9 +19,7 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 
-import java.util.List;
-
-import mobi.app.anjd.R;
+import com.broil.support.widget.R;
 
 /**
  * TODO<功能增强ViewPager 1设置导航点,2设置无限循环(View个数小于等于2时不能无限循环),3设置自动切换>

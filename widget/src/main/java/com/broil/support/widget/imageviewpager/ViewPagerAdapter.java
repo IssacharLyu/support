@@ -1,11 +1,3 @@
-/* 
- * @Title:  ViewPagerAdapter.java 
- * @Copyright:  XXX Co., Ltd. Copyright YYYY-YYYY,  All rights reserved 
- * @Description:  TODO<���������ļ�����ʲô��> 
- * @author:  YangHe 
- * @data:  2014-7-28 ����9:30:49 
- * @version:  V1.0 
- */
 
 package com.broil.support.widget.imageviewpager;
 

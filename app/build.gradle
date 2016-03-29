@@ -13,6 +13,7 @@ android {
         versionCode ext.versionCode
         versionName ext.versionName
     }
+
     buildTypes {
         release {
             minifyEnabled false

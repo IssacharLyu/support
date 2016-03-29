@@ -1,6 +1,5 @@
 package com.broil.support.widget.swipeloadlayout;
 
-import mobi.app.anjd.R;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -14,6 +13,8 @@ import android.view.ViewConfiguration;
 import android.view.ViewGroup;
 import android.widget.AbsListView;
 import android.widget.Scroller;
+
+import com.broil.support.widget.R;
 
 /**
  * Created by Aspsine on 2015/8/13.

@@ -6,7 +6,7 @@
     <solid android:color="#ffffff" />
 
     <size
-        android:height="@dimen/guide_circle_width"
-        android:width="@dimen/guide_circle_width" />
+        android:height="8dip"
+        android:width="8dip" />
 
 </shape>
