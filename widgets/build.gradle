@@ -9,6 +9,8 @@ android {
     defaultConfig {
         minSdkVersion ext.minSdkVersion
         targetSdkVersion ext.targetSdkVersion
+        versionCode ext.versionCode
+        versionName ext.versionName
     }
 
     buildTypes {
@@ -24,3 +26,4 @@ dependencies {
     testCompile 'junit:junit:4.12'
     compile ext.supportAppCompat
 }
+apply from: rootProject.file('gradle/bintrayUpload.gradle')
