@@ -1,8 +1,9 @@
 # Support
+-------
 Some widgets and utils that usually used in my projects.
 #Usage
-You can depend on the .jar through maven
-widgets:
+-------
+You can depend on the .jar through maven:
 ```xml
 <dependency>
   <groupId>com.broil.support</groupId>
@@ -10,7 +11,6 @@ widgets:
   <version>1.0.0</version>
 </dependency>
 ```
-utils:
 ```xml
 <dependency>
   <groupId>com.broil.support</groupId>
@@ -19,19 +19,18 @@ utils:
 </dependency>
 ```
 or through Gradle:
-widgets
-```xml
+```groovy
 dependencies {
   compile 'com.broil.support:widgets:1.0.0'
 }
 ```
-utils
-```xml
+```groovy
 dependencies {
   compile 'com.broil.support:utils:1.0.0'
 }
 ```
 #License
+-------
 ```xml
 Copyright 2016 Oil Lyu
 
