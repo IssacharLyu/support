@@ -4,6 +4,7 @@ Some widgets and utils that usually used in my projects.
 Usage
 -------
 You can depend on the .jar through maven:
+widgets
 ```xml
 <dependency>
   <groupId>com.broil.support</groupId>
