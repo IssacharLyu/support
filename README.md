@@ -1,7 +1,7 @@
-# Support
+Support
 -------
 Some widgets and utils that usually used in my projects.
-#Usage
+Usage
 -------
 You can depend on the .jar through maven:
 ```xml
@@ -29,7 +29,7 @@ dependencies {
   compile 'com.broil.support:utils:1.0.0'
 }
 ```
-#License
+License
 -------
 ```xml
 Copyright 2016 Oil Lyu
