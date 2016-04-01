@@ -43,7 +43,6 @@ afterEvaluate {
                     artifactId projectArtifactId
                     version projectVersionName
                     packaging projectPackaging
-                    description POM_DESCRIPTION
                     url projectSiteUrl
                     licenses {
                         license {
