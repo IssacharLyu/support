@@ -14,17 +14,17 @@ import android.widget.TextView;
  * @version: V1.0
  */
 
-public class CompoundTextVoew extends TextView {
+public class CompoundTextView extends TextView {
 
-    public CompoundTextVoew(Context context) {
+    public CompoundTextView(Context context) {
         super(context);
     }
 
-    public CompoundTextVoew(Context context, AttributeSet attrs) {
+    public CompoundTextView(Context context, AttributeSet attrs) {
         super(context, attrs);
     }
 
-    public CompoundTextVoew(Context context, AttributeSet attrs, int defStyleAttr) {
+    public CompoundTextView(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
     }
 

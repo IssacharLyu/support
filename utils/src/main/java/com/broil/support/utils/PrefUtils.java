@@ -108,7 +108,7 @@ public class PrefUtils {
 
         return getSharedPreferences(context, defaultName).getBoolean(key, defaultValue);
     }
-
+    //float
     public static void putFloat(Context context, String key, float value) {
         if (context == null)
             return;
@@ -129,4 +129,24 @@ public class PrefUtils {
         return getSharedPreferences(context, defaultName).getFloat(key, defaultValue);
     }
 
+    //long
+    public static void putLong(Context context, String key, long value) {
+        if (context == null)
+            return;
+
+        Editor editor = getEditor(context, defaultName);
+        editor.putLong(key, value);
+        editor.commit();
+    }
+
+    public static long getLong(Context context, String key) {
+        return getLong(context, key, -1);
+    }
+
+    public static long getLong(Context context, String key, long defaultValue) {
+        if (context == null)
+            return -1;
+
+        return getSharedPreferences(context, defaultName).getLong(key, defaultValue);
+    }
 }
