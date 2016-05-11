@@ -4,30 +4,29 @@ Some widgets and utils that usually used in my projects.
 Usage
 -------
 You can depend on the .jar through maven:
-widgets
 ```xml
 <dependency>
   <groupId>com.broil.support</groupId>
   <artifactId>widgets</artifactId>
-  <version>1.0.0</version>
+  <version>1.0.1</version>
 </dependency>
 ```
 ```xml
 <dependency>
   <groupId>com.broil.support</groupId>
   <artifactId>utils</artifactId>
-  <version>1.0.0</version>
+  <version>1.0.1</version>
 </dependency>
 ```
 or through Gradle:
 ```groovy
 dependencies {
-  compile 'com.broil.support:widgets:1.0.0'
+  compile 'com.broil.support:widgets:1.0.1'
 }
 ```
 ```groovy
 dependencies {
-  compile 'com.broil.support:utils:1.0.0'
+  compile 'com.broil.support:utils:1.0.1'
 }
 ```
 License
