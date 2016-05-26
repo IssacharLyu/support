@@ -17,7 +17,6 @@ public class Toaster {
     private static Toast mToast = null;
 
     public static void showToast(Context context, String msg) {
-
         if (!TextUtils.isEmpty(msg)) {
             if (mToast == null)
                 mToast = Toast.makeText(context, msg, Toast.LENGTH_SHORT);
@@ -26,6 +25,7 @@ public class Toaster {
             mToast.show();
         }
     }
+
     public static void showToast(Context context, int id) {
         if (id != 0) {
             if (mToast == null)
@@ -33,6 +33,12 @@ public class Toaster {
             else
                 mToast.setText(id);
             mToast.show();
+        }
+    }
+
+    public static void recycle() {
+        if (mToast != null) {
+            mToast = null;
         }
     }
 }
