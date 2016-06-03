@@ -8,25 +8,25 @@ You can depend on the .jar through maven:
 <dependency>
   <groupId>com.broil.support</groupId>
   <artifactId>widgets</artifactId>
-  <version>1.0.1</version>
+  <version>1.0.2</version>
 </dependency>
 ```
 ```xml
 <dependency>
   <groupId>com.broil.support</groupId>
   <artifactId>utils</artifactId>
-  <version>1.0.1</version>
+  <version>1.0.2</version>
 </dependency>
 ```
 or through Gradle:
 ```groovy
 dependencies {
-  compile 'com.broil.support:widgets:1.0.1'
+  compile 'com.broil.support:widgets:1.0.2'
 }
 ```
 ```groovy
 dependencies {
-  compile 'com.broil.support:utils:1.0.1'
+  compile 'com.broil.support:utils:1.0.2'
 }
 ```
 License
