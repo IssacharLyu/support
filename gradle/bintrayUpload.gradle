@@ -14,6 +14,7 @@ if (projectPropertiesFile.exists()) {
 
 // read properties
 def projectName = properties.getProperty("project.name")
+def projectDescription = properties.getProperty("project.description")
 def projectGroupId = properties.getProperty("project.groupId")
 def projectArtifactId = properties.getProperty("project.artifactId")
 def projectVersionName = android.defaultConfig.versionName
@@ -27,7 +28,6 @@ def developerEmail = properties.getProperty("developer.email")
 
 def bintrayUser = properties.getProperty("bintray.user")
 def bintrayApikey = properties.getProperty("bintray.apikey")
-
 def javadocName = properties.getProperty("javadoc.name")
 
 group = projectGroupId
@@ -39,9 +39,9 @@ afterEvaluate {
             pom {
                 project {
                     name projectName
+                    description projectDescription
                     groupId projectGroupId
                     artifactId projectArtifactId
-                    version projectVersionName
                     packaging projectPackaging
                     url projectSiteUrl
                     licenses {
@@ -67,6 +67,7 @@ afterEvaluate {
         }
     }
 }
+version = projectVersionName
 // This generates sources.jar
 task sourcesJar(type: Jar) {
     from android.sourceSets.main.java.srcDirs
@@ -74,6 +75,7 @@ task sourcesJar(type: Jar) {
 }
 
 task javadoc(type: Javadoc) {
+    options.encoding = "UTF-8"
     source = android.sourceSets.main.java.srcDirs
     classpath += project.files(android.getBootClasspath().join(File.pathSeparator))
 }
@@ -85,27 +87,28 @@ task javadocJar(type: Jar, dependsOn: javadoc) {
 }
 
 artifacts {
-    //archives javadocJar
+//    archives javadocJar
     archives sourcesJar
 }
 
 // javadoc configuration
-javadoc {
-    options {
-        encoding "UTF-8"
-        charSet 'UTF-8'
-        author true
-        version projectVersionName
-        links "http://docs.oracle.com/javase/7/docs/api"
-        title javadocName
-    }
-}
+//javadoc {
+//    options {
+//        encoding "UTF-8"
+//        charSet 'UTF-8'
+//        author true
+//        version projectVersionName
+//        links "http://docs.oracle.com/javase/7/docs/api"
+//        title javadocName
+//    }
+//}
 
 // bintray configuration
 bintray {
     user = bintrayUser
     key = bintrayApikey
     configurations = ['archives']
+    println "version="+version
     pkg {
         repo = "maven"
         name = projectName

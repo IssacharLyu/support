@@ -4,7 +4,6 @@ package com.broil.support.utils;
 import android.app.ProgressDialog;
 import android.content.Context;
 import android.graphics.Bitmap;
-import android.support.v4.widget.SwipeRefreshLayout;
 import android.view.View;
 import android.view.View.MeasureSpec;
 import android.view.ViewGroup;
@@ -16,8 +15,6 @@ import android.widget.ListView;
 import android.widget.TextView;
 
 import java.lang.reflect.Field;
-import java.lang.reflect.InvocationTargetException;
-import java.lang.reflect.Method;
 
 /**
  *
@@ -136,21 +133,21 @@ public class ViewUtils {
      * @param refreshing
      * @param notify
      */
-    public static void setRefreshing(SwipeRefreshLayout refreshLayout, boolean refreshing, boolean notify) {
-        Class<? extends SwipeRefreshLayout> refreshLayoutClass = refreshLayout.getClass();
-        if (refreshLayoutClass != null) {
-
-            try {
-                Method setRefreshing = refreshLayoutClass.getDeclaredMethod("setRefreshing", boolean.class, boolean.class);
-                setRefreshing.setAccessible(true);
-                setRefreshing.invoke(refreshLayout, refreshing, notify);
-            } catch (NoSuchMethodException e) {
-                e.printStackTrace();
-            } catch (IllegalAccessException e) {
-                e.printStackTrace();
-            } catch (InvocationTargetException e) {
-                e.printStackTrace();
-            }
-        }
-    }
+//    public static void setRefreshing(SwipeRefreshLayout refreshLayout, boolean refreshing, boolean notify) {
+//        Class<? extends SwipeRefreshLayout> refreshLayoutClass = refreshLayout.getClass();
+//        if (refreshLayoutClass != null) {
+//
+//            try {
+//                Method setRefreshing = refreshLayoutClass.getDeclaredMethod("setRefreshing", boolean.class, boolean.class);
+//                setRefreshing.setAccessible(true);
+//                setRefreshing.invoke(refreshLayout, refreshing, notify);
+//            } catch (NoSuchMethodException e) {
+//                e.printStackTrace();
+//            } catch (IllegalAccessException e) {
+//                e.printStackTrace();
+//            } catch (InvocationTargetException e) {
+//                e.printStackTrace();
+//            }
+//        }
+//    }
 }
