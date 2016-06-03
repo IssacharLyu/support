@@ -4,11 +4,12 @@ ext {
     compileSdkVersion = 23
     targetSdkVersion  = 23
     buildToolsVersion = '23.0.2'
-    versionCode       = 2
-    versionName       = "1.0.1"
-
+    versionCode       = 3
+    versionName       = "1.0.2"
+    javaVersion       = JavaVersion.VERSION_1_8
     ci = 'true'.equals(System.getenv('CI'))
 
     supportRecyclerView = 'com.android.support:recyclerview-v7:23.2.1'
-    supportAppCompat = 'com.android.support:appcompat-v7:23.2.1'
+    supportAppCompat    = 'com.android.support:appcompat-v7:23.2.1'
+    supportCardView     = 'com.android.support:cardview-v7:23.2.1'
 }
